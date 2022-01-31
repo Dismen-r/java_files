@@ -1,0 +1,32 @@
+package com.cpmg.day2;
+class Student{
+	static class Address{
+		int houseno;
+		String streetname;
+	}
+	static {
+		System.out.println("Static");
+	}
+	public Student(int rollno, String name) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+	}
+	private int rollno;
+	@Override
+	public String toString() {
+		return "Student [rollno=" + rollno + ", name=" + name + "]";
+	}
+	private String name;
+	static String schoolname;
+}
+public class MyStatic {
+	public static void main(String[] args) {
+		Student.schoolname="ABC school";
+		Student S1=new Student(1001,"def");
+		Student S2=new Student(1002,"ghi");
+		System.out.println(S2);
+		
+	}
+
+}

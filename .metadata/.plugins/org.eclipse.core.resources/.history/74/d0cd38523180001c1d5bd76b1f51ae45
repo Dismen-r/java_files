@@ -1,0 +1,29 @@
+package com.cpmg.day2;
+
+public class phone {
+	@Override
+	public String toString() {
+		return "phone [price=" + price + ", brandname=" + brandname + ", color=" + color + ", storage=" + storage
+				+ ", screenSize=" + screenSize + "]";
+	}
+	private int price;
+	private String brandname;
+	private String color; 
+	private int storage;
+	private float screenSize;
+	phone(int price, String brandname, String color, int storage, float screenSize)
+	{
+		this.price=price; 
+		this.brandname=brandname;
+		this.color=color;
+		this.storage=storage;
+		this.screenSize=screenSize;
+	}
+	public static void main(String[] args) {
+		phone p1=new phone(234,"abc","hfu",123,67.0f);
+		phone p2=new phone(235,"gjr","jif",456,32.2f);
+		phone p3=new phone(345,"djf","ldk",789,45.0f);
+		System.out.println(p1.toString());
+	}
+
+}

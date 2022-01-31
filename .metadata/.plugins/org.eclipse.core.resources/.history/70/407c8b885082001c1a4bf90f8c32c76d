@@ -1,0 +1,28 @@
+package com.cpmg.day3;
+class A{
+	public int a=30;
+	public void printA() {
+		System.out.println("Class A");
+	}
+}
+class B extends A{
+	public int b=20;
+	public void printB() {
+		System.out.println("Class B");
+	}
+}
+class C extends B{
+	public int c=20;
+	public void printC() {
+		System.out.println("Class C");
+	}
+}
+public class MultilevelInheritance {
+	public static void main(String[] args) {
+		C c=new C();
+		c.printB();
+		c.printA();
+		System.out.println(c.a);
+		System.out.println(c.b);
+
+}

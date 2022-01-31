@@ -1,0 +1,56 @@
+package com.cpmg.day2;
+class phone{
+	private int price;
+	private String brandname;
+	private String color; 
+	private int storage;
+	private float screenSize;
+	phone(int price, String brandName, String color, int storage, float screensize)
+	{
+		this.price=price; 
+		this.brandname=brandname;
+		this.color=color;
+		this.storage=storage;
+		this.screenSize=screenSize;
+	}
+}
+class laptop{
+	private int price;
+	private String brandname;
+	private String color; 
+	private int storage;
+	private float screenSize;
+	
+}
+class tablet{
+
+	private int price;
+	public tablet(int price, String brandname, String color, int storage, float screenSize) {
+		super();
+		this.price = price;
+		this.brandname = brandname;
+		this.color = color;
+		this.storage = storage;
+		this.screenSize = screenSize;
+	}
+	private String brandname;
+	private String color; 
+	private int storage;
+	private float screenSize;
+}
+class car{
+	private int price;
+	private String brandname;
+	private String color; 
+}
+class bike{
+	private int price;
+	private String brandname;
+	private String color; 
+}
+public class MyClass {
+	public static void main(String[] args) {
+		
+	}
+
+}
