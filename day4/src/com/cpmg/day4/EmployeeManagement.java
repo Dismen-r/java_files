@@ -133,25 +133,44 @@ public class EmployeeManagement {
 			if (choice == 5) {
 				break;
 			}
+			EmployeeM temp = new EmployeeM();
 			if (choice == 6) {
-				for (int i = 0; i < emp.length-1; i++) {
-					
+				for (int i = 0; i < emp.length - 1; i++) {
+					for (int j = i + 1; j < emp.length;) {
+						String a = emp[i].getName();
+						String b = emp[j].getName();
+						if (a.compareTo(b) > 0) {
+							temp = emp[i];
+							emp[i] = emp[j];
+							emp[j] = temp;
+						}
+					}
 
 				}
 
 			}
 			if (choice == 7) {
 				for (int i = 0; i < emp.length; i++) {
+					for (int j = i + 1; j < emp.length;) {
+						String a = emp[i].getName();
+						String b = emp[j].getName();
+						if (a.compareTo(b) < 0) {
+							temp = emp[i];
+							emp[i] = emp[j];
+							emp[j] = temp;
+						}
+					}
 
 				}
 
 			}
 			if (choice == 8) {
 				for (int i = 0; i < emp.length; i++) {
-					for(int j=i+1;j<emp.length;) {
-						if(emp[i].getiD()>emp[j].getiD()) {
-							
-							
+					for (int j = i + 1; j < emp.length;) {
+						if (emp[i].getiD() > emp[j].getiD()) {
+							temp = emp[i];
+							emp[i] = emp[j];
+							emp[j] = temp;
 						}
 					}
 
@@ -160,6 +179,13 @@ public class EmployeeManagement {
 			}
 			if (choice == 9) {
 				for (int i = 0; i < emp.length; i++) {
+					for (int j = i + 1; j < emp.length;) {
+						if (emp[i].getiD() < emp[j].getiD()) {
+							temp = emp[i];
+							emp[i] = emp[j];
+							emp[j] = temp;
+						}
+					}
 
 				}
 
@@ -167,7 +193,7 @@ public class EmployeeManagement {
 			if (choice == 10) {
 				int mi = emp[0].getSalary();
 				for (int i = 0; i < emp.length; i++) {
-					if (emp[i].getSalary() > mi) {
+					if (emp[i].getSalary() < mi) {
 						mi = emp[i].getSalary();
 					}
 				}
