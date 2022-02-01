@@ -17,5 +17,6 @@ public class MyArray {
 			b[i]=s.next();
 		for(int i=0;i<4;i++)
 			System.out.println(b[i]);
+		s.close();
 	}
 }
