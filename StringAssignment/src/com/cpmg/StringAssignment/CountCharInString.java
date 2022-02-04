@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class CountCharInString {
 	public static void main(String args[]) {
 		Scanner s=new Scanner(System.in);
-		String a = "hello world java";
+		String a =s.next();
 		String b=s.next();
 		int j=0;
 		for (int i = 0; i < a.length(); i++) {
