@@ -1,7 +1,7 @@
 package com.cpmg.day2;
-
+import java.util.*;
 public class EmployeeClass {
-	
+
 	public EmployeeClass(String name, String address, int empid, int salary) {
 		super();
 		this.name = name;
@@ -20,9 +20,10 @@ public class EmployeeClass {
 	private int salary;
 	
 	public static void main(String[] args) {
-		EmployeeClass e1=new EmployeeClass("gif","403,xyz",356,2000);
-		EmployeeClass e2=new EmployeeClass("hif","404,xyz",357,3000);
-		EmployeeClass e3=new EmployeeClass("jif","405,xyz",358,4000);
+		Scanner s=new Scanner(System.in);
+		EmployeeClass e1=new EmployeeClass(s.next(),"403,xyz",s.nextInt(),2000);
+		EmployeeClass e2=new EmployeeClass(s.next(),"404,xyz",s.nextInt(),3000);
+		EmployeeClass e3=new EmployeeClass(s.next(),"405,xyz",s.nextInt(),4000);
 		System.out.println(e1.toString());
 		System.out.println(e2.toString());
 		System.out.println(e3.toString());

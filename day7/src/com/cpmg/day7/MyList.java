@@ -4,18 +4,9 @@ import java.util.*;
 
 public class MyList {
 	public static void main(String args[]) {
-		// interface left //implemented class on right side
-		// Array as implementation
 		List<String> l0 = new ArrayList<String>();
-
-		// LinkedList as implementation
 		List<String> l1 = new LinkedList<String>();
-
-		// FIFI
 		List<String> l2 = new Stack<String>();
-
-		// Array
-		// Thread safe
 		List<String> l3 = new Vector<String>();
 		l0.add("hello");
 		l0.add("hi");
@@ -31,5 +22,6 @@ public class MyList {
 		System.out.println(l1);
 		System.out.println(l2);
 		System.out.println(l3);
+		System.out.println(l2);
 	}
 }

@@ -8,7 +8,6 @@ public class RemoveCharFromString {
 		Scanner s = new Scanner(System.in);
 		String a = s.next();
 		String b = "";
-
 		char c = s.next().charAt(0);
 		int j = 0;
 		for (int i = 0; i < a.length(); i++) {
