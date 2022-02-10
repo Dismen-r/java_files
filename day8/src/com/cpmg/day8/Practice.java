@@ -69,7 +69,7 @@ public class Practice {
 		Studentss s1 = new Studentss("hi");
 		Engineering e1 = new Engineering("ujfujg", "Engineering");
 		Medical m1 = new Medical("dis");
-		Aero a1 = new Aero("ohho");
+		Aero a1 = new Aero("igoyy");
 
 		System.out.println(a1.toString());
 

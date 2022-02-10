@@ -48,12 +48,26 @@ class EmployeeM {
 	private int salary;
 
 }
+class EM{
+	EmployeeM c;
 
+	public EM(EmployeeM c) {
+		this.c = c;
+	}
+	
+}
 public class EmployeeManagement {
+	public static void swap(EM c1,EM c2) {
+		EmployeeM t=c1.c;
+		c1.c=c1.c;
+		c2.c=t;
+		
+	}
 	public static void main(String arg[]) {
 
 		Scanner sc = new Scanner(System.in);
 		EmployeeM[] emp = {};
+		EM[] c= {};
 
 		while (true) {
 
@@ -77,6 +91,8 @@ public class EmployeeManagement {
 				System.out.println("Enter the Number of Employee you want to enter");
 				int size = sc.nextInt();
 				emp = new EmployeeM[size];
+				c=new EM[size];
+				
 				for (int i = 0; i < size; i++) {
 
 					System.out.println("Enter name Employee " + i);
@@ -86,14 +102,13 @@ public class EmployeeManagement {
 					System.out.println("Enter Salary Employee " + i);
 					int salary = sc.nextInt();
 					emp[i] = new EmployeeM(name, iD, salary);
+					c[i]= new EM(emp[i]);
 				}
 
 			}
 			if (choice == 2) {
 				for (int i = 0; i < emp.length; i++) {
-					if (emp[i].getiD() != 0) {
 						System.out.println(emp[i]);
-					}
 				}
 			}
 			if (choice == 3) {
@@ -133,16 +148,14 @@ public class EmployeeManagement {
 			if (choice == 5) {
 				break;
 			}
-			EmployeeM temp = new EmployeeM();
+			EmployeeM temp = new EmployeeM(" ",0,0);
 			if (choice == 6) {
 				for (int i = 0; i < emp.length - 1; i++) {
 					for (int j = i + 1; j < emp.length;) {
 						String a = emp[i].getName();
 						String b = emp[j].getName();
 						if (a.compareTo(b) > 0) {
-							temp = emp[i];
-							emp[i] = emp[j];
-							emp[j] = temp;
+							swap(c[i],c[j]);
 						}
 					}
 

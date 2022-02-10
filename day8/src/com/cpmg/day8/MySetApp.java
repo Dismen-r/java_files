@@ -54,7 +54,7 @@ public class MySetApp {
 		a.add(s2);
 
 		Scanner sc = new Scanner(System.in);
-		int c = 1, d = 2;
+		int c = 0, d = 2;
 
 		while (true) {
 			System.out.println("Press 1 for insert");

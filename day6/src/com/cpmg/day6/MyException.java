@@ -27,7 +27,7 @@ public class MyException {
 		} else {
 			// System.out.println("Only Positive Number are allow");
 			// to use throw keyword
-			throw new OnlyPostiveNumberAllowed("Only Positive Number are allow");
+			throw new OnlyPostiveNumberAllowed("Only Positive Number are allowed");
 		}
 	}
 
