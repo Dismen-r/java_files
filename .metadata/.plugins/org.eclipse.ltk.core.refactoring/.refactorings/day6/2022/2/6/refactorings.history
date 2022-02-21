@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cpmg.day6.MyExpection&apos; to &apos;MyException&apos;&#x0D;&#x0A;- Original project: &apos;day6&apos;&#x0D;&#x0A;- Original element: &apos;com.cpmg.day6.MyExpection&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cpmg.day6.MyException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MyExpection&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cpmg.day6{MyExpection.java[MyExpection" matchStrategy="1" name="MyException" qualified="false" references="true" similarDeclarations="false" stamp="1643868670523" textual="false" version="1.0"/>
+</session>

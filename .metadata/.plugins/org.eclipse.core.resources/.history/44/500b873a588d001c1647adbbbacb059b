@@ -1,0 +1,11 @@
+package com.cpmg.day11;
+import java.io.*;
+import java.util.*;
+public class MyFile {
+	public static void main(String args[]) throws Exception{
+	File f = new File("filename.txt");
+	Scanner sc=new Scanner(f);
+	System.out.println(f);
+	
+}
+}

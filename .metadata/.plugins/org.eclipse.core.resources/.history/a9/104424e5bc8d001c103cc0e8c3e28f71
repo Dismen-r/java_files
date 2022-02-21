@@ -1,0 +1,68 @@
+package com.cpmg.day9;
+
+import java.util.*;
+import java.lang.*;
+
+class Doctor {
+
+	private String name;
+
+	private String speciality;
+
+	private int experience;
+
+	public Doctor(String name, String speciality, int experience) {
+		this.name = name;
+
+		this.speciality = speciality;
+
+		this.experience = experience;
+	}
+//
+}
+
+class DoctorService {
+
+	// DONT MODIFY THIS
+
+	private List<Doctor> doctorsRepository;
+
+	// DONT MODIFY THIS
+
+	public DoctorService (List<Doctor> doctorsRepository) 
+	{ 
+		this.doctorsRepository=doctorsRepository; 
+	}
+
+	//CODE HERE
+	}
+
+	public class Source {
+		private static String doctorsData;
+
+		// DON'T MODIFY THIS
+
+		static {
+
+			StringBuilder doctors = new StringBuilder();
+			doctors.append("Amy-Pediatrics-16;");
+			doctors.append("John-Dermatology-10;");
+			doctors.append("David-Dermatology-15;");
+			doctors.append("Bob-Pediatrics-6;");
+			doctors.append("Cathy-Dermatology-5;");
+			doctors.append("Mavis-Pediatrics-11;");
+			doctors.append("Robin-Pediatrics-7;");
+			doctors.append("Minty-Dermatology-9;");
+			doctors.append("Jim-Cardiology-25;");
+			doctorsData = doctors.toString();
+		}
+
+		
+		public static void main(String[] args) { // CODE HERE
+			 StringTokenizer st = new StringTokenizer(doctorsData,";");
+			 int n=st.countTokens();
+			 while(st.hasMoreTokens()) {
+				 System.out.println(st.nextToken());
+			 }
+		}
+	}

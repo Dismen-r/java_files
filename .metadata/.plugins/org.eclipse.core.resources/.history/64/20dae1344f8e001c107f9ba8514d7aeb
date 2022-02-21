@@ -1,0 +1,8 @@
+package com.cpmg.day6;
+import java.util.*;
+public class Exception1 {
+	public static void main(String[] args) throws Exception {
+		
+	}
+
+}

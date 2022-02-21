@@ -1,0 +1,17 @@
+package com.cpmg.day11;
+import java.io.*;
+import java.util.*;
+public class MyFile {
+	public static void main(String args[]) throws Exception{
+	File f = new File("file.txt");
+	f.createNewFile();
+	Scanner sc=new Scanner(f);
+    FileWriter w= new FileWriter("file.txt");
+
+    w.write("hello world");
+	while(sc.hasNextLine()) {
+		System.out.println(sc.nextLine());
+	}
+	sc.close();
+}
+}
