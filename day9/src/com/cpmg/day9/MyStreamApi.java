@@ -17,5 +17,6 @@ public class MyStreamApi {
 		List<Integer> ls = l.stream().filter(n -> n > 0).collect(Collectors.toList());
 		ls.forEach(System.out::println);
 		l.stream().map(d -> d * d).forEach(System.err::println);
+		
 	}
 }
